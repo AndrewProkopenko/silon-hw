@@ -1,0 +1,72 @@
+.nav-link { 
+    font-size: 0.8rem;
+}
+.navbar-brand {
+    font-size: 1.5rem !important;
+ }
+
+ .index-shoping { 
+     display: inline-block;
+     text-align: center;
+     font-size: 0.7rem;
+     line-height: 1.6em;
+     height: 1.6em;
+     min-width: 1.6em;
+     border-radius: 1em;
+     position: absolute;
+     top: -5px;
+     right: -10px;
+ }
+
+ .head-banner { 
+     background-image: url(../images/bg-1.jpg);
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+     
+     
+     img { 
+        
+        max-height: 700px ; 
+        }
+
+
+.hero {
+    height: auto !important;
+} 
+@media (min-width: 992px) { 
+            .hero {
+                height: 700px !important;
+            }
+}
+    
+ }
+ .text-banner { 
+     margin: 30px 0; 
+    p { 
+        font-weight: 300 !important;
+        font-size: 0.8rem;
+        letter-spacing: 3px;
+        margin-bottom: 0;
+    }
+    div { 
+        font-size: 3rem;
+        text-transform: capitalize;
+        font-weight: bold;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    a { 
+        padding: 1.2rem 2.5rem;
+        background: map-get($theme-colors , "coral" );
+        border-radius: 8px;
+        color: white;
+        font-weight: bold;
+        letter-spacing: 2px;
+        text-decoration: none;
+        text-decoration: none;
+        &:hover { 
+            background: darken( map-get($theme-colors , "coral" ), 5%);
+        }
+    }
+ }
