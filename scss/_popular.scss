@@ -1,55 +1,25 @@
-.section { 
-    margin-top: 150px; 
-    h4 { 
-        font-size: 2rem;
-        font-weight: 600;
-        text-align: center;
-        margin-bottom: 90px;
-    }
-} 
 
-// класс SECTION - общий класс для секций
-
-
-.featured { 
+.popular { 
     img {  
-        max-width: 360px !important;
-        max-height: 450px !important;
+        max-width: 260px !important;
+        max-height: 340px !important;
     }
 }
 .text-aling-center { 
     text-align: center;
 }
-
-// .picture-conteiner { 
-    
-//     &:hover { 
-//         .hover-block { 
-//             a { 
-//                 transform: translateY(-30px);
-//                 &:first-child { 
-//                     transform: translateY(-30px) translatex(-30px)
-//                 }
-//                 &:last-child { 
-//                     transform: translateY(-30px) translatex(30px)
-//                 }
-//             }
-            
-//         } 
-//     } 
-// }
-
-.hover-block { 
+.hover-block-popular { 
     position: absolute;
     bottom: 0;
     width: 100%;
+    white-space: nowrap;
     a { 
         text-decoration: none;
         display: inline-block; 
         color: #000;
         font-size: 1rem;
         padding: 1rem;
-        margin: 30px 16px;
+        margin: 30px 8px;
         background: rgb(255, 255, 255);
         box-shadow: #414141 0 2px 5px;
         border-radius: 3rem;
@@ -80,10 +50,11 @@
     }
 }
 @media screen and ( min-width: 999px) { 
-    .hover-block { 
+   .hover-block-popular { 
     position: absolute;
     bottom: 0;
     width: 100%;
+    
     a { 
         text-decoration: none;
         display: inline-block; 
@@ -123,19 +94,19 @@
     .picture-conteiner { 
     
         &:hover { 
-            .hover-block { 
+            
+            .hover-block-popular { 
                 a { 
                     transform: translateY(-30px);
                     &:first-child { 
-                        transform: translateY(-30px) translatex(-30px)
+                        transform: translateY(-30px) translatex(-10px)
                     }
                     &:last-child { 
-                        transform: translateY(-30px) translatex(30px)
+                        transform: translateY(-30px) translatex(10px)
                     }
                 }
                 
             } 
-            
         } 
     }
 }
