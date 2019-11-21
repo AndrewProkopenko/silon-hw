@@ -1,6 +1,6 @@
 $(document).ready(function(){
     $("#featured-carousel").owlCarousel({        
-        // autoplay: true, 
+        autoplay: true, 
         autoplayTimeout: 4000,
         autoplaySpeed: 2000,
         autoplayHoverPause: true,
@@ -20,7 +20,7 @@ $(document).ready(function(){
   });
 $(document).ready(function(){
     $("#popular-carousel").owlCarousel({        
-        // autoplay: true, 
+        autoplay: true, 
         autoplayTimeout: 4000,
         autoplaySpeed: 2000,
         autoplayHoverPause: true,
@@ -30,7 +30,7 @@ $(document).ready(function(){
                 items: 1,
                 margin: 15,
             },
-            700: { 
+            800: { 
                 items: 3,
                 margin: 15,
             },

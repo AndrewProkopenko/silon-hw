@@ -1,34 +1,10 @@
 $theme-colors: (
     "coral": #ff5353,
-    "light-coral": #e9e1d8,
+    "light-coral": #e9e1d8, 
     "lighter-coral": #fef7f6,
     "grey": rgb(80, 71, 71)
 );
 $enable-responsive-font-sizes: true;
 
-body { 
-    font-family: 'Roboto', sans-serif !important;
-}
-.dropdown-menu { 
-    background: map-get($theme-colors , "lighter-coral" )  !important;
-    border: none !important;
-    box-shadow: 2px 2px 4px #8888888e;
-    transform: translateX(-250px);
-    
-    
-}
-@media screen and ( max-width: 999px) { 
-    .dropdown-menu{ 
-        transform: translateX(0px) !important;
-    }
-}
 
-input { 
-    &:focus { 
-        outline: none !important;
-        border: none !important;
-        // border: #ff5353;
-        box-shadow:   map-get($theme-colors , "coral" ) 0 0 2px !important;
-    }
-}
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
