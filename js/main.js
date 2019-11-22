@@ -50,20 +50,13 @@ $(document).ready(function(){
         autoplayHoverPause: true,
         loop: true,
         items:1,
-        // responsive: { 
-        //     0: { 
-        //         items: 1,
-        //         margin: 15,
-        //     },
-        //     800: { 
-        //         items: 3,
-        //         margin: 15,
-        //     },
-        //     1100: { 
-        //         items: 4,
-        //         margin: 30,
-        //     }
+        responsive: { 
+          
+            600: { 
+                items: 2,
+                margin: 15,
+            }
             
-        // }
+        }
     });
   });
