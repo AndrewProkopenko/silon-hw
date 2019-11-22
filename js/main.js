@@ -42,3 +42,28 @@ $(document).ready(function(){
         }
     });
   });
+$(document).ready(function(){
+    $("#trending-carousel").owlCarousel({        
+        autoplay: true, 
+        autoplayTimeout: 4000,
+        autoplaySpeed: 2000,
+        autoplayHoverPause: true,
+        loop: true,
+        items:1,
+        // responsive: { 
+        //     0: { 
+        //         items: 1,
+        //         margin: 15,
+        //     },
+        //     800: { 
+        //         items: 3,
+        //         margin: 15,
+        //     },
+        //     1100: { 
+        //         items: 4,
+        //         margin: 30,
+        //     }
+            
+        // }
+    });
+  });

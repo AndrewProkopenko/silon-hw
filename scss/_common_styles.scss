@@ -10,12 +10,7 @@ body {
     
     
 }
-@media screen and ( max-width: 999px) { 
-    .dropdown-menu{ 
-        transform: translateX(0px) !important;
-    }
-    
-}
+
 
 input { 
     &:focus { 
@@ -113,4 +108,26 @@ $star_value: (
             background: transparent;
          }
      }
+}
+
+@media screen and ( max-width: 999px) { 
+    .dropdown-menu{ 
+        transform: translateX(0px) !important;
+    }
+    .owl-dots { 
+       
+        button { 
+            margin: 8px;
+        }
+        
+    }
+    
+}
+@media screen and ( max-width: 500px) { 
+    .owl-dots {        
+        button { 
+            margin: 5px;
+        }    
+    }
+    
 }

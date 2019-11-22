@@ -10254,11 +10254,6 @@ body {
   transform: translateX(-250px);
 }
 
-@media screen and (max-width: 999px) {
-  .dropdown-menu {
-    transform: translateX(0px) !important;
-  }
-}
 input:focus {
   outline: none !important;
   border: none !important;
@@ -10649,6 +10644,20 @@ input:focus {
   background: transparent;
 }
 
+@media screen and (max-width: 999px) {
+  .dropdown-menu {
+    transform: translateX(0px) !important;
+  }
+
+  .owl-dots button {
+    margin: 8px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .owl-dots button {
+    margin: 5px;
+  }
+}
 .nav-link {
   font-size: 0.8rem;
 }
@@ -10920,6 +10929,24 @@ input:focus {
   .sale-banner p {
     margin: 10px;
   }
+}
+.advantages-content {
+  height: 100%;
+  padding: 25px;
+  border: #ebeef0 solid 1px;
+  text-align: center;
+}
+.advantages-content div {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #000;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+.advantages-content p {
+  color: #888;
+  font-size: 0.875rem;
 }
 
 /*# sourceMappingURL=style.css.map */
