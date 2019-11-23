@@ -10652,10 +10652,12 @@ input:focus {
   .owl-dots button {
     margin: 8px;
   }
-}
-@media screen and (max-width: 500px) {
-  .owl-dots button {
-    margin: 5px;
+
+  .section {
+    margin-top: 100px;
+  }
+  .section h4 {
+    margin-bottom: 45px;
   }
 }
 .nav-link {
@@ -10932,7 +10934,6 @@ input:focus {
 }
 .advantages-content {
   height: 100%;
-  padding: 25px;
   border: #ebeef0 solid 1px;
   text-align: center;
 }
@@ -10947,6 +10948,221 @@ input:focus {
 .advantages-content p {
   color: #888;
   font-size: 0.875rem;
+}
+
+.follow-content {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  text-decoration: none;
+  overflow: hidden;
+}
+.follow-content img {
+  height: 100%;
+  width: 100%;
+}
+.follow-content span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  font-size: 2rem;
+  background: #ff535396;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: 300ms;
+  transform: translateY(30px);
+}
+
+.follow-content:hover span {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+@media screen and (max-width: 999px) {
+  .follow-content {
+    max-width: 250px;
+    max-height: 250px;
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    text-decoration: none;
+    overflow: hidden;
+  }
+  .follow-content img {
+    height: 100%;
+    width: 100%;
+  }
+  .follow-content span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    font-size: 3rem;
+    background: #ff535396;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+footer {
+  margin-top: 50px;
+}
+footer ul {
+  margin: 0;
+  padding: 0;
+}
+footer ul li {
+  list-style: none;
+}
+
+.footer-conteiner {
+  padding: 90px 0;
+}
+.footer-conteiner ul {
+  margin-bottom: 50px;
+}
+.footer-conteiner ul li {
+  padding: 5px 0;
+}
+.footer-conteiner ul li:first-child {
+  text-transform: uppercase;
+  padding: 0;
+  font-size: 1rem;
+  color: #000;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+.footer-conteiner ul li a {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #888888;
+  font-size: 0.875rem;
+}
+.footer-conteiner ul li a:hover {
+  color: #ff5353;
+}
+
+.get-in-on a {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-around;
+  border-radius: 5px;
+  padding: 5px 3px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  transition: 300ms ease;
+}
+.get-in-on a i {
+  font-size: 1.2rem;
+}
+.get-in-on a div {
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin: 5px;
+}
+.get-in-on a div p {
+  margin: 0;
+  font-size: 0.625rem;
+  font-weight: 400;
+}
+
+.get-in-on-android a {
+  background: #fff;
+  transition: 300ms ease;
+}
+.get-in-on-android a i {
+  color: #ff5353;
+}
+.get-in-on-android a div {
+  color: #000;
+}
+.get-in-on-android a:hover {
+  background: #ff5353;
+}
+.get-in-on-android a:hover i {
+  color: #fff;
+}
+.get-in-on-android a:hover div {
+  color: #fff;
+}
+
+.get-in-on-apple a {
+  background: #ff5353;
+  transition: 300ms ease;
+}
+.get-in-on-apple a i {
+  color: #fff;
+}
+.get-in-on-apple a div {
+  color: #fff;
+}
+.get-in-on-apple a:hover {
+  background: #fff;
+}
+.get-in-on-apple a:hover i {
+  color: #ff5353;
+}
+.get-in-on-apple a:hover div {
+  color: #000;
+}
+
+.footer-shop-line {
+  position: relative;
+}
+.footer-shop-line::after {
+  content: "";
+  width: calc(83% + 10px );
+  height: 1px;
+  background: #d6d8d9;
+  position: absolute;
+  bottom: -25px;
+}
+
+.footer-line {
+  position: relative;
+}
+.footer-line::before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: #d6d8d9;
+  position: absolute;
+  bottom: 67px;
+  left: 0px;
+  top: 0;
+}
+
+.social-icon a {
+  color: #000;
+  font-size: 0.875rem;
+  text-decoration: none;
+  padding: 8px;
+  background: #fff;
+  margin-right: 10px;
+  transition: 300ms ease;
+}
+.social-icon a:hover {
+  background: #ff5353;
+  color: #fff;
+}
+
+.footer-copyright {
+  color: #888;
+  font-size: 0.875rem;
+  text-align: center;
+  padding: 40px 0;
+}
+.footer-copyright a {
+  color: #ff5353;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=style.css.map */

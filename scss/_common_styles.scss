@@ -121,13 +121,11 @@ $star_value: (
         }
         
     }
-    
-}
-@media screen and ( max-width: 500px) { 
-    .owl-dots {        
-        button { 
-            margin: 5px;
-        }    
-    }
-    
-}
+    .section { 
+        margin-top: 100px; 
+        h4 { 
+            margin-bottom: 45px;
+        }
+    } 
+
+} 
