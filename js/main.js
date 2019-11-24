@@ -62,7 +62,7 @@ $(document).ready(function(){
   });
 $(document).ready(function(){
     $("#journal-carousel").owlCarousel({        
-        autoplay: true, 
+        // autoplay: true, 
         autoplayTimeout: 4000,
         autoplaySpeed: 2000,
         autoplayHoverPause: true,

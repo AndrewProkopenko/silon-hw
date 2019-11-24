@@ -10999,7 +10999,8 @@ input:focus {
 }
 .journal-item div span a {
   color: #888;
-  font-size: 0.8rem;
+  font-size: 1rem;
+  white-space: nowrap;
 }
 
 .follow-content {
