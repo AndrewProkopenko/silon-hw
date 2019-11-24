@@ -60,3 +60,24 @@ $(document).ready(function(){
         }
     });
   });
+$(document).ready(function(){
+    $("#journal-carousel").owlCarousel({        
+        autoplay: true, 
+        autoplayTimeout: 4000,
+        autoplaySpeed: 2000,
+        autoplayHoverPause: true,
+        loop: true,
+        items:1,
+        margin: 15,
+        responsive: { 
+          
+            600: { 
+                items: 2
+            },
+            800: { 
+                items: 3
+            }
+            
+        }
+    });
+  });
