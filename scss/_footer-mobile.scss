@@ -1,0 +1,60 @@
+
+.accordion-item-name {
+    cursor: pointer;
+    display: inline-block; 
+    padding: 16px; 
+    width: 100%; 
+    color: #000; 
+    background: map-get($map: $theme-colors, $key: "coral-light") !important;
+    font-size: 1rem;
+    font-weight: 600;
+    position: relative;
+    
+    a { 
+        color: #888 ; 
+        text-decoration: none;
+    }
+    // ANGLE-DOWN 
+    span { 
+        display: inline-block;
+        font-size: 0.6rem;
+        line-height: 2rem;
+        padding: 5px;
+        position: absolute;
+        bottom: 6px;
+        color: #888;
+
+    }
+    // ANGLE-DOWN 
+}  
+.accordion-item-list { 
+    
+    a { 
+        display: block;
+        font-size: 0.875rem;
+        color: #888 ; 
+        text-decoration: none;
+        padding: 5px; 
+      
+        
+        &:active { 
+            color : map-get($theme-colors, "coral" )
+        }
+        
+    }
+    &:last-child { 
+        position: relative;
+        &::after { 
+            content: "";
+            width: 400px;
+            height: 1px;
+            // background: #0090d8;
+            background: #d6d8d9;
+            display: block;
+            position: absolute;
+            bottom: -12px;
+            
+            left: calc(50% - 200px);
+        }
+    }
+}
