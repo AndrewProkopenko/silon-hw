@@ -42,24 +42,7 @@ $(document).ready(function(){
         }
     });
   });
-$(document).ready(function(){
-    $("#trending-carousel").owlCarousel({        
-        autoplay: true, 
-        autoplayTimeout: 4000,
-        autoplaySpeed: 2000,
-        autoplayHoverPause: true,
-        loop: true,
-        items:1,
-        responsive: { 
-          
-            600: { 
-                items: 2,
-                margin: 15,
-            }
-            
-        }
-    });
-  });
+
 $(document).ready(function(){
     $("#journal-carousel").owlCarousel({        
         // autoplay: true, 
@@ -81,3 +64,39 @@ $(document).ready(function(){
         }
     });
   });
+
+
+  ;(function(){
+        let trendingCarousel = document.querySelector('#trending-carousel');
+        console.log (window.innerWidth );
+        function resizeHandler() { 
+            if(window.innerWidth < 992 ) { 
+                trendingCarousel.classList.add('owl-carousel');
+               
+               
+                    $("#trending-carousel").owlCarousel({        
+                        autoplay: true, 
+                        autoplayTimeout: 4000,
+                        autoplaySpeed: 2000,
+                        autoplayHoverPause: true,
+                        loop: true,
+                        items: 1,
+                        responsive: { 
+                          
+                            600: { 
+                                items: 2,
+                                margin: 15,
+                            }
+                            
+                        }
+                    });
+                 
+            } else { 
+                trendingCarousel.classList.remove('owl-carousel');
+            }
+        }
+        window.addEventListener('resize', resizeHandler);
+        window.addEventListener('load', resizeHandler);
+  })();
+
+  
